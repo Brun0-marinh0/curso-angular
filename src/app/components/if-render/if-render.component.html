@@ -1,0 +1,8 @@
+<div class="container">
+    <h3 *ngIf="showMe; else dontShow" >mostrar informação</h3>
+    <ng-template #dontShow>
+        <div>
+            <h3>informação nao a amostra: {{showMe}} </h3>
+        </div>
+    </ng-template>
+</div>
