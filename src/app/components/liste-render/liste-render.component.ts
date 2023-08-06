@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { myForm } from 'src/app/interfaces/MyForm';
 
 @Component({
   selector: 'app-liste-render',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./liste-render.component.css']
 })
 export class ListeRenderComponent {
-  items = [
+  items: myForm[] = [
     {name: "a"},
     {name: "b"},
     {name: "c"},
